@@ -1,0 +1,20 @@
+{
+  "extends": "expo/tsconfig.base",
+  "types":[],
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "target": "ESNext",
+    "strict": true,
+    "noImplicitAny": false,
+    "baseUrl": "./",
+    "paths": {
+      "@/App": ["src/App"],
+      "@/components/*": ["src/components/*"],
+      "@/screens/*": ["src/screens/*"],
+      "@/utils/*": ["src/utils/*"],
+      "@/assets/*": ["src/assets/*"]
+    },
+    "typeRoots": ["node_modules/@types"]
+  },
+  "include": ["src/**/*"]
+}
